@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zoloo's calculator</title>
+    <link rel="stylesheet" href="./clacu.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <input type="text" value="0" id="display" readonly/>
+      </div>
+    <div class="buttons">
+      <input type="button" value="AC" onclick="reset()"class="te">
+      <input type="button" value="+/-" onclick="negative('+/-')" class="te">
+      <input type="button" value="%" onclick="onSelectOperator('%')" class="te">
+      <input type="button" value="/" onclick="onSelectOperator('/')" class="or">
+
+      <input type="button" value="7" onclick="onSelectNumber(7)" class="number">
+      <input type="button" value="8" onclick="onSelectNumber(8)" class="number">
+      <input type="button" value="9" onclick="onSelectNumber(9)" class="number">
+      <input type="button" value="x" onclick="onSelectOperator('x')"  class="or">
+
+      <input type="button" value="4" onclick="onSelectNumber(4)" class="number">
+      <input type="button" value="5" onclick="onSelectNumber(5)" class="number">
+      <input type="button" value="6" onclick="onSelectNumber(6)" class="number">
+      <input type="button" value="-" onclick="onSelectOperator('-')" class="or">
+
+      <input type="button" value="1" onclick="onSelectNumber(1)" class="number">
+      <input type="button" value="2" onclick="onSelectNumber(2)" class="number">
+      <input type="button" value="3" onclick="onSelectNumber(3)" class="number">
+      <input type="button" value="+" onclick="onSelectOperator('+')" class="or">
+
+      <input type="button" value="0" onclick="onSelectNumber(0)" class="teg number"/>
+      <input type="button" value="." onclick="onSelectNumber('.')" class="te">
+      <input type="button" value="=" onclick="calculat('=')" class="or">
+    </div>
+
+    <script src="./calcu.js"></script>
+  </body>
+</html>
